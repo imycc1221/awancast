@@ -34,8 +34,6 @@ This repository contains the **experiment code and results** behind the system, 
 
 Awan-Cast combines three coordinated layers.
 
-![The regime-selective gate](assets/diagrams/regime-selective-gate.png)
-
 1. **Physics baseline + regime-selective gate.** A fast optical-flow / clear-sky nowcast runs everywhere; a lightweight onset detector (AUC ≈ 0.81) classifies each part of the sky and routes only the **storm-onset** pixels to the accurate deep model, sending calm regions to the cheap baseline.
 2. **Learned residual correction + calibrated uncertainty.** A learned correction sharpens the forecast, and conformal calibration attaches a **prediction interval with a coverage guarantee** rather than a bare point estimate. Storm hours automatically receive wider intervals.
 3. **Tariff-aware scheduler.** The forecast is converted into concrete action — scheduling flexible appliances and battery dispatch — priced against all three Malaysian schemes: **Solar ATAP** (Peninsula), **Net Energy Metering** (Sarawak), and **Self-Consumption** (Sabah).
