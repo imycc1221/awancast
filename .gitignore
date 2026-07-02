@@ -15,6 +15,12 @@ models/
 *.ckpt
 .cache/
 
+# Node / frontend
+node_modules/
+dist/
+.pnpm-store/
+*.local
+
 # Python
 __pycache__/
 *.py[cod]

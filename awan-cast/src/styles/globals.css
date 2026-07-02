@@ -1,0 +1,284 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f5f5f7;
+  --panel: #ffffff;
+  --panel-nested: #fafafa;
+  --ink: #1d1d1f;
+  --ink-muted: #6e6e73;
+  --hairline: #e5e5ea;
+  --accent: #0f766e;
+  --success: #34c759;
+  --warn: #b25e00;
+  --warn-bg: #fff0db;
+  --warn-border: #ffd9a3;
+  --danger: #dc2626;
+  --sun: #fbbf24;
+  --chart-line: #34c759;
+  --chart-band: rgba(52, 199, 89, 0.18);
+  --chart-demand: #4e5462;
+  --shadow-elev: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --on-accent: #ffffff;
+}
+
+/* Dark theme — warm "sunset over mountains" palette (bg #1C1D26, peach/gold accents). */
+.dark {
+  --bg: #1c1d26;
+  --panel: #262833;
+  --panel-nested: #21222c;
+  --ink: #f0eae3;
+  --ink-muted: #a89c90;
+  --hairline: #343642;
+  --accent: #ffac8b;
+  --success: #4bd6a0;
+  --warn: #ffc695;
+  --warn-bg: rgba(255, 198, 149, 0.12);
+  --warn-border: rgba(255, 198, 149, 0.42);
+  --danger: #f6866c;
+  --sun: #ffc695;
+  --chart-line: #ffc695;
+  --chart-band: rgba(255, 198, 149, 0.2);
+  /* Cool slate so the demand line reads clearly against the warm gold solar line. */
+  --chart-demand: #8f9ab3;
+  --shadow-elev: 0 1px 2px rgba(0, 0, 0, 0.5);
+  /* Accent is a light peach in dark mode, so text on it must be dark. */
+  --on-accent: #1c1d26;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family:
+    'IBM Plex Sans Variable',
+    'IBM Plex Sans',
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    sans-serif;
+  font-feature-settings: 'tnum';
+  font-variant-numeric: tabular-nums;
+  transition:
+    background-color 200ms ease,
+    color 200ms ease;
+}
+
+/* Visible keyboard focus everywhere, in the brand accent. */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* State-change reveal when switching views (Home / Facility / Evidence). Content is visible by
+   default; the animation only eases it in. */
+@keyframes view-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+}
+
+.view-enter {
+  animation: view-in 180ms var(--ease-out);
+}
+
+/* Staggered entrance for the items of one container (panels in a column, cards in a grid). */
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+.stagger-children > * {
+  animation: rise-in 260ms var(--ease-out) both;
+}
+.stagger-children > *:nth-child(1) { animation-delay: 0ms; }
+.stagger-children > *:nth-child(2) { animation-delay: 35ms; }
+.stagger-children > *:nth-child(3) { animation-delay: 70ms; }
+.stagger-children > *:nth-child(4) { animation-delay: 105ms; }
+.stagger-children > *:nth-child(5) { animation-delay: 140ms; }
+.stagger-children > *:nth-child(6) { animation-delay: 175ms; }
+.stagger-children > *:nth-child(7) { animation-delay: 210ms; }
+.stagger-children > *:nth-child(8) { animation-delay: 245ms; }
+.stagger-children > *:nth-child(9) { animation-delay: 280ms; }
+.stagger-children > *:nth-child(n + 10) { animation-delay: 315ms; }
+
+/* Content reveal inside an already-visible container (e.g. the "Why?" panel opening). */
+.reveal-in {
+  animation: rise-in 160ms var(--ease-out) both;
+}
+
+/* Interactive card lift: state feedback on hover/focus, kept subtle (no ghost-card shadows). */
+.card-hover {
+  transition:
+    transform 150ms var(--ease-out),
+    box-shadow 150ms var(--ease-out),
+    border-color 150ms var(--ease-out);
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  border-color: color-mix(in srgb, var(--accent) 35%, var(--hairline));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .view-enter,
+  .stagger-children > *,
+  .reveal-in {
+    animation: none;
+  }
+  .card-hover,
+  .card-hover:hover {
+    transition: none;
+    transform: none;
+  }
+}
+
+.tnum {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum';
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--hairline);
+  border-radius: 12px;
+  box-shadow: var(--shadow-elev);
+}
+
+.panel-nested {
+  background: var(--panel-nested);
+  border: 1px solid var(--hairline);
+  border-radius: 8px;
+}
+
+/* Panel title: sentence case at a readable size, hierarchy carried by weight rather than caps. */
+.label-eyebrow {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+/* Status badge: no tinted fill, no coloured text — a small semantic dot with a soft halo
+   carries the state, and the label stays in normal ink. */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.pill::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+.pill-run::before {
+  background: var(--success);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--success) 22%, transparent);
+}
+
+.pill-wait::before {
+  background: var(--warn);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--warn) 22%, transparent);
+}
+
+.hairline-divider {
+  border-top: 1px solid var(--hairline);
+}
+
+/* Leaflet container — Apple-feel */
+.leaflet-container {
+  background: var(--panel-nested);
+  font-family: inherit;
+  border-radius: 12px;
+}
+
+.leaflet-control-attribution {
+  background: rgba(255, 255, 255, 0.75) !important;
+  font-size: 9px !important;
+  backdrop-filter: blur(8px);
+}
+
+.dark .leaflet-control-attribution {
+  background: rgba(15, 39, 64, 0.8) !important;
+  color: var(--ink-muted) !important;
+}
+
+/* Recharts overrides for Apple-clean look */
+.recharts-cartesian-grid line {
+  stroke: var(--hairline);
+}
+
+.recharts-text {
+  fill: var(--ink-muted);
+  font-size: 11px;
+}
+
+/* Pulse animation for the home pin */
+@keyframes pin-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(15, 118, 110, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(15, 118, 110, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(15, 118, 110, 0);
+  }
+}
+
+.home-pin {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid #fff;
+  animation: pin-pulse 2.4s infinite;
+}
+
+/* Skeleton shimmer for loading */
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--panel-nested) 0%,
+    var(--hairline) 50%,
+    var(--panel-nested) 100%
+  );
+  background-size: 800px 100%;
+  animation: shimmer 1.4s infinite linear;
+  border-radius: 4px;
+}

@@ -1,0 +1,115 @@
+.tour-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+}
+
+.tour-highlight {
+  position: fixed;
+  border-radius: 12px;
+  box-shadow:
+    0 0 0 9999px rgba(0, 0, 0, 0.6),
+    0 0 18px rgba(15, 118, 110, 0.55);
+  border: 2px solid var(--accent);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+  z-index: 10001;
+}
+
+.tour-popover {
+  position: fixed;
+  width: 300px;
+  background: var(--panel);
+  color: var(--ink);
+  border: 1px solid var(--hairline);
+  border-radius: 12px;
+  padding: 18px;
+  z-index: 10002;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  animation: tour-pop-in 0.25s ease-out;
+  transition: top 0.3s cubic-bezier(0.4, 0, 0.2, 1), left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes tour-pop-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.tour-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-flex;
+  background: transparent;
+  border: 0;
+  color: var(--ink-muted);
+  cursor: pointer;
+}
+.tour-close:hover {
+  color: var(--ink);
+}
+
+.tour-step-indicator {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.tour-title {
+  margin: 0.35rem 0 0.4rem;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.tour-content {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.tour-hint {
+  margin-top: 0.5rem;
+  font-size: 11px;
+  color: var(--ink-muted);
+}
+
+.tour-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.tour-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--hairline);
+  cursor: pointer;
+}
+.tour-btn--secondary {
+  background: transparent;
+  color: var(--ink-muted);
+}
+.tour-btn--secondary:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.tour-btn--primary {
+  background: var(--accent);
+  color: var(--on-accent);
+  border-color: var(--accent);
+}
