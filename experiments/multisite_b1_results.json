@@ -1,0 +1,41 @@
+{
+  "experiment": "multi-site B1 onset gain (LightGBM vs smart-persistence), 120-min, test 2020",
+  "by_site": {
+    "petaling_jaya": {
+      "n_days": 261,
+      "n_onset": 3130,
+      "smart_persist_onset_MAE": 311.5,
+      "lightgbm_onset_MAE": 207.1,
+      "gain_pct": 33.5,
+      "gain_ci95": [
+        31.8,
+        35.4
+      ],
+      "days_lightgbm_wins_frac": 0.966
+    },
+    "kuching": {
+      "n_days": 211,
+      "n_onset": 2238,
+      "smart_persist_onset_MAE": 303.0,
+      "lightgbm_onset_MAE": 225.0,
+      "gain_pct": 25.8,
+      "gain_ci95": [
+        23.2,
+        28.6
+      ],
+      "days_lightgbm_wins_frac": 0.915
+    },
+    "kota_kinabalu": {
+      "n_days": 252,
+      "n_onset": 2789,
+      "smart_persist_onset_MAE": 300.9,
+      "lightgbm_onset_MAE": 214.2,
+      "gain_pct": 28.8,
+      "gain_ci95": [
+        26.6,
+        31.0
+      ],
+      "days_lightgbm_wins_frac": 0.968
+    }
+  }
+}

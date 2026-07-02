@@ -1,0 +1,99 @@
+{
+  "assumptions": {
+    "load": "NREL ComStock RetailStandalone FL (real 15-min, scaled to 2MW peak)",
+    "solar": "NSRDB Petaling Jaya 2020 (real)",
+    "forecast": "clear-sky-index persistence (real, error-bearing), 30-min lead",
+    "resolution": "30-min = exact RP4 MD window",
+    "battery": "2MWh/1MW",
+    "cap_charge_RM_per_kW_mo": 89.27,
+    "note": "REAL load + REAL error-bearing forecast; idealized battery, two-source alignment -> still a projection"
+  },
+  "annual_demand_charge_RM": {
+    "grid_only": 1693407,
+    "solar_only": 1655702,
+    "blind_conservative": 1109592,
+    "real_forecast": 1055016,
+    "oracle": 988132
+  },
+  "savings_RM_per_year": {
+    "system_oracle_vs_grid": 705275,
+    "system_realforecast_vs_grid": 638391,
+    "REAL_forecast_value_vs_blind": 54576,
+    "oracle_forecast_value_vs_blind (headroom)": 121460,
+    "fraction_of_oracle_value_captured_by_real_forecast": 0.449
+  },
+  "per_month_peak_kW": {
+    "1": {
+      "grid": 2000,
+      "blind": 1000,
+      "forecast": 1000,
+      "oracle": 1000
+    },
+    "2": {
+      "grid": 1185,
+      "blind": 669,
+      "forecast": 541,
+      "oracle": 528
+    },
+    "3": {
+      "grid": 1139,
+      "blind": 650,
+      "forecast": 735,
+      "oracle": 545
+    },
+    "4": {
+      "grid": 1410,
+      "blind": 793,
+      "forecast": 684,
+      "oracle": 684
+    },
+    "5": {
+      "grid": 1639,
+      "blind": 989,
+      "forecast": 953,
+      "oracle": 904
+    },
+    "6": {
+      "grid": 1789,
+      "blind": 1646,
+      "forecast": 1382,
+      "oracle": 1372
+    },
+    "7": {
+      "grid": 1830,
+      "blind": 1364,
+      "forecast": 1324,
+      "oracle": 1320
+    },
+    "8": {
+      "grid": 1787,
+      "blind": 1262,
+      "forecast": 1154,
+      "oracle": 1090
+    },
+    "9": {
+      "grid": 1803,
+      "blind": 1314,
+      "forecast": 1500,
+      "oracle": 1208
+    },
+    "10": {
+      "grid": 1773,
+      "blind": 1171,
+      "forecast": 1152,
+      "oracle": 1097
+    },
+    "11": {
+      "grid": 1423,
+      "blind": 862,
+      "forecast": 765,
+      "oracle": 701
+    },
+    "12": {
+      "grid": 1194,
+      "blind": 712,
+      "forecast": 629,
+      "oracle": 618
+    }
+  }
+}

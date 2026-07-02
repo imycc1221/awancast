@@ -1,0 +1,35 @@
+# Data (large, externally hosted — rebuild with data/*.py)
+data/nsrdb/
+data/himawari/
+data/comstock/
+data/Dataset/
+*.DAT
+*.DAT.bz2
+*.nc
+*.h5
+*.hdf
+
+# Models / caches
+models/
+*.pt
+*.ckpt
+.cache/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# Secrets / local config
+.env
+*.key
+secrets.*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,95 @@
+{
+  "horizon": "120min",
+  "target": 0.9,
+  "n_cal": 19562,
+  "n_test": 19679,
+  "methods": {
+    "global": {
+      "marginal_coverage": 0.899,
+      "mean_width_Wm2": 525.6,
+      "per_regime_coverage": {
+        "STABLE": 0.911,
+        "PARTIAL": 0.883,
+        "CONVECTIVE": 0.863
+      },
+      "per_regime_width_Wm2": {
+        "STABLE": 525.6,
+        "PARTIAL": 525.6,
+        "CONVECTIVE": 525.6
+      },
+      "worst_month_coverage": 0.879,
+      "rolling_monthly_coverage": {
+        "1": 0.886,
+        "2": 0.923,
+        "3": 0.879,
+        "4": 0.89,
+        "5": 0.928,
+        "6": 0.913,
+        "7": 0.911,
+        "8": 0.892,
+        "9": 0.887,
+        "10": 0.9,
+        "11": 0.883,
+        "12": 0.894
+      }
+    },
+    "regime": {
+      "marginal_coverage": 0.898,
+      "mean_width_Wm2": 523.2,
+      "per_regime_coverage": {
+        "STABLE": 0.897,
+        "PARTIAL": 0.905,
+        "CONVECTIVE": 0.877
+      },
+      "per_regime_width_Wm2": {
+        "STABLE": 502.4,
+        "PARTIAL": 561.0,
+        "CONVECTIVE": 549.0
+      },
+      "worst_month_coverage": 0.876,
+      "rolling_monthly_coverage": {
+        "1": 0.883,
+        "2": 0.917,
+        "3": 0.876,
+        "4": 0.891,
+        "5": 0.924,
+        "6": 0.91,
+        "7": 0.91,
+        "8": 0.895,
+        "9": 0.89,
+        "10": 0.9,
+        "11": 0.883,
+        "12": 0.891
+      }
+    },
+    "normalized_regime": {
+      "marginal_coverage": 0.908,
+      "mean_width_Wm2": 570.7,
+      "per_regime_coverage": {
+        "STABLE": 0.904,
+        "PARTIAL": 0.91,
+        "CONVECTIVE": 0.935
+      },
+      "per_regime_width_Wm2": {
+        "STABLE": 554.8,
+        "PARTIAL": 588.9,
+        "CONVECTIVE": 628.6
+      },
+      "worst_month_coverage": 0.888,
+      "rolling_monthly_coverage": {
+        "1": 0.903,
+        "2": 0.923,
+        "3": 0.895,
+        "4": 0.893,
+        "5": 0.901,
+        "6": 0.892,
+        "7": 0.918,
+        "8": 0.934,
+        "9": 0.932,
+        "10": 0.927,
+        "11": 0.888,
+        "12": 0.89
+      }
+    }
+  }
+}

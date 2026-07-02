@@ -1,0 +1,32 @@
+{
+  "note": "DEEP U-Net as expensive model in the gate (NOT diffusion), held-out 06-04",
+  "n_px": 2145000,
+  "onset_base_rate": 0.171,
+  "persistence_MAE": 7.696,
+  "always_deep_MAE": 5.203,
+  "oracle_gate_MAE": 5.486,
+  "oracle_frac": 0.171,
+  "operational_gate": {
+    "thr_0.5": {
+      "MAE": 5.675,
+      "expensive_frac": 0.396,
+      "benefit_captured_pct": 91.5
+    },
+    "thr_0.59": {
+      "MAE": 5.867,
+      "expensive_frac": 0.319,
+      "benefit_captured_pct": 82.8
+    },
+    "thr_0.7": {
+      "MAE": 6.205,
+      "expensive_frac": 0.214,
+      "benefit_captured_pct": 67.5
+    }
+  },
+  "vs_tabular_gate": {
+    "tabular_oracle": 6.379,
+    "tabular_op_thr0.5": 7.023,
+    "deep_oracle": 5.486,
+    "deep_op_thr0.5": 5.675
+  }
+}

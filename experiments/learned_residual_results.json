@@ -1,0 +1,18 @@
+{
+  "horizon": "30min",
+  "train_rows": 81000,
+  "test_rows": 27000,
+  "overall": {
+    "persistence": 7.64,
+    "optical_flow": 8.9,
+    "learned_residual": 7.55,
+    "learned_vs_oflow_pct": 15.2
+  },
+  "onset_subset": {
+    "n": 4637,
+    "persistence": 24.3,
+    "optical_flow": 20.13,
+    "learned_residual": 16.94,
+    "learned_vs_oflow_pct": 15.8
+  }
+}

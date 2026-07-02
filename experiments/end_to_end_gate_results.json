@@ -1,0 +1,27 @@
+{
+  "experiment": "end-to-end gated nowcast, held-out 2026-06-04, 30-min",
+  "n_test_px": 2145000,
+  "onset_base_rate": 0.171,
+  "persistence_MAE": 7.696,
+  "always_learned_MAE": 7.459,
+  "always_learned_expensive_frac": 1.0,
+  "oracle_gate_MAE": 6.379,
+  "oracle_expensive_frac": 0.171,
+  "operational_gate": {
+    "thr_0.5": {
+      "MAE": 7.023,
+      "expensive_frac": 0.33,
+      "benefit_captured_pct": 51.1
+    },
+    "thr_0.59": {
+      "MAE": 7.067,
+      "expensive_frac": 0.245,
+      "benefit_captured_pct": 47.8
+    },
+    "thr_0.7": {
+      "MAE": 7.175,
+      "expensive_frac": 0.142,
+      "benefit_captured_pct": 39.6
+    }
+  }
+}

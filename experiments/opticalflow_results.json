@@ -1,0 +1,50 @@
+{
+  "30min": {
+    "n_pairs": 9,
+    "overall_issuance_weighted": {
+      "optical_flow_MAE_K": 10.21,
+      "persistence_MAE_K": 8.51,
+      "skill_vs_persist": -0.2
+    },
+    "overall_pixel_weighted": {
+      "optical_flow_MAE_K": 10.21,
+      "persistence_MAE_K": 8.51,
+      "skill_vs_persist": -0.2
+    },
+    "high_change_issuance_weighted": {
+      "optical_flow_MAE_K": 22.49,
+      "persistence_MAE_K": 25.54,
+      "skill_vs_persist": 0.12,
+      "n_px": 454308
+    },
+    "high_change_pixel_weighted": {
+      "optical_flow_MAE_K": 22.49,
+      "persistence_MAE_K": 25.54,
+      "skill_vs_persist": 0.12
+    }
+  },
+  "60min": {
+    "n_pairs": 6,
+    "overall_issuance_weighted": {
+      "optical_flow_MAE_K": 13.28,
+      "persistence_MAE_K": 11.55,
+      "skill_vs_persist": -0.15
+    },
+    "overall_pixel_weighted": {
+      "optical_flow_MAE_K": 13.28,
+      "persistence_MAE_K": 11.55,
+      "skill_vs_persist": -0.15
+    },
+    "high_change_issuance_weighted": {
+      "optical_flow_MAE_K": 24.51,
+      "persistence_MAE_K": 28.23,
+      "skill_vs_persist": 0.132,
+      "n_px": 450022
+    },
+    "high_change_pixel_weighted": {
+      "optical_flow_MAE_K": 24.51,
+      "persistence_MAE_K": 28.23,
+      "skill_vs_persist": 0.132
+    }
+  }
+}

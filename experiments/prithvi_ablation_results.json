@@ -1,0 +1,14 @@
+{
+  "note": "frozen Prithvi-EO-100M embedding ablation (B3 LightGBM), held-out 06-04; 6-band OPTICAL model on 1-band thermal IR",
+  "pca_components": 16,
+  "baseline_no_embed": {
+    "onset_MAE": 16.98,
+    "overall_MAE": 7.52
+  },
+  "with_prithvi_embed": {
+    "onset_MAE": 16.8,
+    "overall_MAE": 7.27
+  },
+  "delta_onset_K": -0.18,
+  "interpretation": "negative delta => EO embeddings helped; ~0/positive => no transfer (expected; optical->thermal-IR mismatch)"
+}

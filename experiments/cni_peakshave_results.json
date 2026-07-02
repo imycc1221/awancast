@@ -1,0 +1,161 @@
+{
+  "assumptions": {
+    "capacity_charge_RM_per_kW_month": 89.27,
+    "solar_kW": 1000.0,
+    "battery": "2MWh/1MW",
+    "load": "stylized mall ~2MW afternoon peak",
+    "site": "NSRDB Petaling Jaya 2020",
+    "note": "STYLIZED projection, not measured"
+  },
+  "annual_demand_charge_RM": {
+    "grid_only": 2161320.0,
+    "solar_only": 2083854.0,
+    "battery_forecast": 1277859.0,
+    "naive_robust": 1784984.0,
+    "naive_optimistic": 2076943.0
+  },
+  "per_month_peak_kW": {
+    "1": {
+      "grid": 2018,
+      "solar": 1946,
+      "forecast": 1209,
+      "naive_robust": 1665,
+      "naive_optimistic": 1933,
+      "robust_minus_forecast": 456
+    },
+    "2": {
+      "grid": 2018,
+      "solar": 1941,
+      "forecast": 1100,
+      "naive_robust": 1340,
+      "naive_optimistic": 1938,
+      "robust_minus_forecast": 240
+    },
+    "3": {
+      "grid": 2018,
+      "solar": 1938,
+      "forecast": 1165,
+      "naive_robust": 1671,
+      "naive_optimistic": 1938,
+      "robust_minus_forecast": 506
+    },
+    "4": {
+      "grid": 2018,
+      "solar": 1945,
+      "forecast": 1269,
+      "naive_robust": 1857,
+      "naive_optimistic": 1945,
+      "robust_minus_forecast": 588
+    },
+    "5": {
+      "grid": 2018,
+      "solar": 1951,
+      "forecast": 1168,
+      "naive_robust": 1597,
+      "naive_optimistic": 1951,
+      "robust_minus_forecast": 429
+    },
+    "6": {
+      "grid": 2018,
+      "solar": 1936,
+      "forecast": 1135,
+      "naive_robust": 1569,
+      "naive_optimistic": 1918,
+      "robust_minus_forecast": 434
+    },
+    "7": {
+      "grid": 2018,
+      "solar": 1946,
+      "forecast": 1093,
+      "naive_robust": 1460,
+      "naive_optimistic": 1946,
+      "robust_minus_forecast": 367
+    },
+    "8": {
+      "grid": 2018,
+      "solar": 1940,
+      "forecast": 1188,
+      "naive_robust": 1678,
+      "naive_optimistic": 1940,
+      "robust_minus_forecast": 491
+    },
+    "9": {
+      "grid": 2018,
+      "solar": 1946,
+      "forecast": 1277,
+      "naive_robust": 1857,
+      "naive_optimistic": 1946,
+      "robust_minus_forecast": 579
+    },
+    "10": {
+      "grid": 2018,
+      "solar": 1936,
+      "forecast": 1276,
+      "naive_robust": 1861,
+      "naive_optimistic": 1936,
+      "robust_minus_forecast": 585
+    },
+    "11": {
+      "grid": 2018,
+      "solar": 1956,
+      "forecast": 1178,
+      "naive_robust": 1608,
+      "naive_optimistic": 1929,
+      "robust_minus_forecast": 430
+    },
+    "12": {
+      "grid": 2018,
+      "solar": 1960,
+      "forecast": 1257,
+      "naive_robust": 1835,
+      "naive_optimistic": 1946,
+      "robust_minus_forecast": 577
+    }
+  },
+  "savings_RM_per_year": {
+    "DEFENSIBLE_system_forecast_vs_grid": 883461,
+    "battery_forecast_vs_solar_only": 805995,
+    "forecast_value_vs_FAIR_naive_p20": 507125,
+    "forecast_value_vs_strawman_naive (inflated upper bound)": 799084
+  },
+  "naive_quantile_sweep": {
+    "naive_p10": {
+      "annual_RM": 1507968,
+      "forecast_value_RM": 230109
+    },
+    "naive_p20": {
+      "annual_RM": 1784984,
+      "forecast_value_RM": 507125
+    },
+    "naive_p30": {
+      "annual_RM": 1915572,
+      "forecast_value_RM": 637713
+    },
+    "naive_p40": {
+      "annual_RM": 1963626,
+      "forecast_value_RM": 685767
+    },
+    "naive_p50": {
+      "annual_RM": 1992392,
+      "forecast_value_RM": 714533
+    }
+  },
+  "forecast_value_range_RM": [
+    230109,
+    714533
+  ],
+  "storm_driven_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
+}

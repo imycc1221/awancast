@@ -1,0 +1,14 @@
+{
+  "note": "C5/B2 self-supervised (masked-recon) pretrain -> onset task, held-out 06-04; NOT diffusion",
+  "ssl_pretrain_frames": 140,
+  "random_init": {
+    "onset_MAE": 12.39,
+    "overall_MAE": 7.19
+  },
+  "ssl_init": {
+    "onset_MAE": 10.96,
+    "overall_MAE": 5.33
+  },
+  "ssl_minus_random_onset_K": -1.43,
+  "interpretation": "negative ssl_minus_random => SSL pretraining helped onset; ~0 => no transfer benefit on same-domain frames"
+}

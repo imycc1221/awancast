@@ -1,0 +1,168 @@
+{
+  "30min": {
+    "overall": {
+      "persistence": {
+        "n": 22973,
+        "MAE": 111.83,
+        "skill_vs_persist": 0.0
+      },
+      "smart_persistence": {
+        "n": 22973,
+        "MAE": 81.88,
+        "skill_vs_persist": 0.2678
+      },
+      "lightgbm": {
+        "n": 22973,
+        "MAE": 83.23,
+        "skill_vs_persist": 0.2557
+      }
+    },
+    "by_regime": {
+      "STABLE": {
+        "persistence": {
+          "n": 13905,
+          "MAE": 96.72
+        },
+        "smart_persistence": {
+          "n": 13905,
+          "MAE": 62.2
+        },
+        "lightgbm": {
+          "n": 13905,
+          "MAE": 68.33
+        }
+      },
+      "PARTIAL": {
+        "persistence": {
+          "n": 6833,
+          "MAE": 133.16
+        },
+        "smart_persistence": {
+          "n": 6833,
+          "MAE": 110.15
+        },
+        "lightgbm": {
+          "n": 6833,
+          "MAE": 104.89
+        }
+      },
+      "CONVECTIVE": {
+        "persistence": {
+          "n": 2235,
+          "MAE": 140.57
+        },
+        "smart_persistence": {
+          "n": 2235,
+          "MAE": 117.82
+        },
+        "lightgbm": {
+          "n": 2235,
+          "MAE": 109.74
+        }
+      }
+    },
+    "onset_slice": {
+      "persistence": {
+        "n": 1643,
+        "MAE": 328.15
+      },
+      "smart_persistence": {
+        "n": 1643,
+        "MAE": 302.9
+      },
+      "lightgbm": {
+        "n": 1643,
+        "MAE": 247.47
+      }
+    },
+    "onset_count": 1643,
+    "regime_counts": {
+      "STABLE": 13905,
+      "PARTIAL": 6833,
+      "CONVECTIVE": 2235
+    }
+  },
+  "120min": {
+    "overall": {
+      "persistence": {
+        "n": 19679,
+        "MAE": 267.66,
+        "skill_vs_persist": 0.0
+      },
+      "smart_persistence": {
+        "n": 19679,
+        "MAE": 134.01,
+        "skill_vs_persist": 0.4993
+      },
+      "lightgbm": {
+        "n": 19679,
+        "MAE": 120.94,
+        "skill_vs_persist": 0.5481
+      }
+    },
+    "by_regime": {
+      "STABLE": {
+        "persistence": {
+          "n": 12371,
+          "MAE": 263.77
+        },
+        "smart_persistence": {
+          "n": 12371,
+          "MAE": 123.23
+        },
+        "lightgbm": {
+          "n": 12371,
+          "MAE": 117.08
+        }
+      },
+      "PARTIAL": {
+        "persistence": {
+          "n": 5696,
+          "MAE": 276.97
+        },
+        "smart_persistence": {
+          "n": 5696,
+          "MAE": 145.6
+        },
+        "lightgbm": {
+          "n": 5696,
+          "MAE": 126.7
+        }
+      },
+      "CONVECTIVE": {
+        "persistence": {
+          "n": 1612,
+          "MAE": 264.6
+        },
+        "smart_persistence": {
+          "n": 1612,
+          "MAE": 175.71
+        },
+        "lightgbm": {
+          "n": 1612,
+          "MAE": 130.17
+        }
+      }
+    },
+    "onset_slice": {
+      "persistence": {
+        "n": 3288,
+        "MAE": 433.86
+      },
+      "smart_persistence": {
+        "n": 3288,
+        "MAE": 308.42
+      },
+      "lightgbm": {
+        "n": 3288,
+        "MAE": 204.81
+      }
+    },
+    "onset_count": 3288,
+    "regime_counts": {
+      "STABLE": 12371,
+      "PARTIAL": 5696,
+      "CONVECTIVE": 1612
+    }
+  }
+}

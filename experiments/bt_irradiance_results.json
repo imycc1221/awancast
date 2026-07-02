@@ -1,0 +1,24 @@
+{
+  "experiment": "BT->irradiance link (Himawari-8 2020 + NSRDB Petaling Jaya)",
+  "paired_samples": 144,
+  "nowcast_samples": 120,
+  "n_days": 4,
+  "link": {
+    "corr_BT_vs_k": 0.717,
+    "BTtoK_R2": 0.281,
+    "GHI_MAE_fit_Wm2": 89.3
+  },
+  "translation_30min_GHI_MAE_Wm2": {
+    "persistence_GHI": 116.9,
+    "persistBT_to_GHI": 102.5,
+    "opticalflowBT_to_GHI": 103.0
+  },
+  "BTtoGHI_improvement_vs_persistGHI_Wm2": {
+    "mean": 14.4,
+    "ci95_dayblock_4days": [
+      -4.6,
+      33.4
+    ],
+    "note": "day-block bootstrap over only 4 days -> coarse/wide CI; indicative"
+  }
+}

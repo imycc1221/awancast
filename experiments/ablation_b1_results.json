@@ -1,0 +1,27 @@
+{
+  "experiment": "B1 ablation, 120-min onset slice",
+  "onset_threshold": 0.3,
+  "smart_persistence_onset_MAE": 308.4,
+  "rows": {
+    "clear-sky only": {
+      "n_features": 1,
+      "onset_MAE": 200.9
+    },
+    "+ recent GHI/k lags": {
+      "n_features": 8,
+      "onset_MAE": 219.2
+    },
+    "+ regime variance": {
+      "n_features": 9,
+      "onset_MAE": 216.7
+    },
+    "+ weather": {
+      "n_features": 14,
+      "onset_MAE": 208.3
+    },
+    "+ temporal (full)": {
+      "n_features": 17,
+      "onset_MAE": 205.2
+    }
+  }
+}

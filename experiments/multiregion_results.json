@@ -1,0 +1,29 @@
+{
+  "experiment": "multi-region optical-flow high-change skill, panel test days",
+  "by_region": {
+    "Peninsular": {
+      "highchange_skill": 0.034,
+      "ci95": [
+        -0.017,
+        0.092
+      ],
+      "n_highchange_px": 716850
+    },
+    "Sarawak": {
+      "highchange_skill": 0.114,
+      "ci95": [
+        0.047,
+        0.182
+      ],
+      "n_highchange_px": 829113
+    },
+    "Sabah": {
+      "highchange_skill": 0.105,
+      "ci95": [
+        0.053,
+        0.157
+      ],
+      "n_highchange_px": 567411
+    }
+  }
+}

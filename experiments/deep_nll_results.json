@@ -1,0 +1,14 @@
+{
+  "note": "deep U-Net + Gaussian-NLL probabilistic head (NOT diffusion), held-out 06-04",
+  "onset_MAE_K": 11.61,
+  "overall_MAE_K": 5.83,
+  "predicted_sigma_vs_error_corr": 0.509,
+  "mean_abs_error_by_sigma_quartile": [
+    2.81,
+    4.41,
+    6.41,
+    9.65
+  ],
+  "baseline_ensemble_spread_corr": 0.156,
+  "interpretation": "if corr > ensemble 0.156 and error rises monotonically with sigma-quartile, the NLL head gives a usable predictive uncertainty (closing the \u00a75.11 gap)"
+}

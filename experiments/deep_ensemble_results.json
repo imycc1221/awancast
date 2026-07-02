@@ -1,0 +1,18 @@
+{
+  "note": "deep U-Net ensemble (3 seeds), held-out 06-04; NOT diffusion",
+  "single_seed_onset_MAE": [
+    12.39,
+    10.51,
+    10.94
+  ],
+  "ensemble_onset_MAE": 10.75,
+  "ensemble_overall_MAE": 4.93,
+  "spread_vs_error_corr": 0.156,
+  "mean_abs_error_by_spread_quartile": [
+    5.23,
+    4.12,
+    3.64,
+    6.74
+  ],
+  "interpretation": "ensemble mean should beat mean single seed; positive corr + rising error-by-quartile => spread is a usable uncertainty signal"
+}

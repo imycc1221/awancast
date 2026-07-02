@@ -1,0 +1,17 @@
+# Awan-Cast experiment dependencies (Python 3.13)
+# Core (CPU) — baselines, gate, decision value, conformal
+numpy
+pandas
+scikit-learn
+lightgbm
+opencv-python
+matplotlib
+
+# Satellite data handling (Himawari HSD -> geolocated cloud-top temperature)
+satpy
+pyresample
+boto3            # anonymous S3 access to AWS Open Data (Himawari, ComStock)
+
+# Deep-learning experiments (GPU recommended: deep_*.py, prithvi_ablation.py)
+torch
+huggingface-hub  # frozen Prithvi-EO foundation-model embeddings

@@ -1,0 +1,44 @@
+{
+  "panel": {
+    "train_days": 8,
+    "test_days": 6,
+    "horizon": "30min"
+  },
+  "metrics": {
+    "of_highchange_skill": {
+      "value": 0.083,
+      "ci95": [
+        0.031,
+        0.139
+      ]
+    },
+    "learned_onset_gain_pct": {
+      "value": 30.182,
+      "ci95": [
+        27.344,
+        32.391
+      ]
+    },
+    "detector_AUC": {
+      "value": 0.807,
+      "ci95": [
+        0.793,
+        0.821
+      ]
+    },
+    "gate_benefit_pct": {
+      "value": 53.739,
+      "ci95": [
+        47.297,
+        59.865
+      ]
+    },
+    "gate_expensive_frac": {
+      "value": 0.497,
+      "ci95": [
+        0.462,
+        0.526
+      ]
+    }
+  }
+}

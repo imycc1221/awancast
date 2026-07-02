@@ -1,0 +1,18 @@
+{
+  "note": "deterministic deep U-Net (NOT diffusion); single held-out day 06-04; full-res",
+  "train_seqs": 103,
+  "test_seqs": 8,
+  "overall_MAE_K": {
+    "persistence": 7.7,
+    "optical_flow": 8.89,
+    "tabular_LightGBM": 6.85,
+    "deep_unet": 7.06
+  },
+  "onset_MAE_K": {
+    "persistence": 24.6,
+    "optical_flow": 20.16,
+    "tabular_LightGBM_bar": 16.8,
+    "deep_unet": 10.38
+  },
+  "deep_beats_tabular_bar_on_onset": true
+}

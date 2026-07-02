@@ -1,0 +1,15 @@
+{
+  "experiment": "B1 onset slice, 120-min",
+  "onset_threshold": 0.3,
+  "n_days": 261,
+  "n_onset_samples": 3130,
+  "smart_persist_MAE": 311.48,
+  "lightgbm_MAE": 207.1,
+  "gain_pct": 33.5,
+  "gain_95CI_pct": [
+    31.8,
+    35.4
+  ],
+  "days_lightgbm_wins_frac": 0.966,
+  "bootstrap_p(gain<=0)": 0.0
+}

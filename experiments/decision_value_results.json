@@ -1,0 +1,59 @@
+{
+  "assumptions": {
+    "system_kW": 5.0,
+    "import_tariff_RM": 0.2703,
+    "export_rate_RM": {
+      "ATAP": 0.1,
+      "NEM": 0.2703,
+      "SELCO": 0.0
+    },
+    "note": "import held constant; only export rule varies. Forecasts are issuance-time (no same-day future): clearsky=ex-ante, dayahead=yesterday's profile, perfect=upper bound."
+  },
+  "rm_saved_per_day": {
+    "ATAP": {
+      "naive_cost_RM_day": 2.522,
+      "saved_perfect_RM_day": 1.199,
+      "saved_clearsky_RM_day": 1.055,
+      "saved_dayahead_RM_day_vs_8pm": 1.071,
+      "saved_dayahead_ci95_vs_8pm": [
+        1.044,
+        1.099
+      ],
+      "saved_dayahead_RM_day_vs_midday": 0.001,
+      "saved_dayahead_ci95_vs_midday": [
+        -0.014,
+        0.015
+      ]
+    },
+    "NEM": {
+      "naive_cost_RM_day": -0.915,
+      "saved_perfect_RM_day": 0.0,
+      "saved_clearsky_RM_day": 0.0,
+      "saved_dayahead_RM_day_vs_8pm": 0.0,
+      "saved_dayahead_ci95_vs_8pm": [
+        -0.0,
+        0.0
+      ],
+      "saved_dayahead_RM_day_vs_midday": 0.0,
+      "saved_dayahead_ci95_vs_midday": [
+        -0.0,
+        0.0
+      ]
+    },
+    "SELCO": {
+      "naive_cost_RM_day": 4.541,
+      "saved_perfect_RM_day": 1.903,
+      "saved_clearsky_RM_day": 1.674,
+      "saved_dayahead_RM_day_vs_8pm": 1.7,
+      "saved_dayahead_ci95_vs_8pm": [
+        1.658,
+        1.742
+      ],
+      "saved_dayahead_RM_day_vs_midday": 0.001,
+      "saved_dayahead_ci95_vs_midday": [
+        -0.021,
+        0.024
+      ]
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "note": "C4: deep-ensemble gate on seasonal panel, full-frame MAE (K), day-bootstrap CIs",
+  "test_days": 6,
+  "seeds": 3,
+  "persist": {
+    "MAE": 8.974,
+    "ci95": [
+      8.401,
+      9.465
+    ]
+  },
+  "always_deep": {
+    "MAE": 6.523,
+    "ci95": [
+      6.123,
+      7.023
+    ]
+  },
+  "oracle": {
+    "MAE": 6.515,
+    "ci95": [
+      6.146,
+      6.961
+    ]
+  },
+  "opgate": {
+    "MAE": 6.71,
+    "ci95": [
+      6.292,
+      7.215
+    ]
+  },
+  "opgate_benefit_pct": {
+    "value": 92.1,
+    "ci95": [
+      87.6,
+      95.8
+    ]
+  },
+  "deep_onset_MAE_per_seed_meanK": {
+    "0": 15.05,
+    "1": 13.93,
+    "2": 14.62
+  }
+}

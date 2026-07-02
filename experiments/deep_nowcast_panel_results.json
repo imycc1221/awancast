@@ -1,0 +1,36 @@
+{
+  "note": "deep U-Net (NOT diffusion), seasonal holdout train Jan-Apr / test May-Jun, onset MAE (K)",
+  "train_seqs": 63,
+  "test_days": 6,
+  "onset_MAE_K": {
+    "persist": {
+      "value": 26.39,
+      "ci95": [
+        25.3,
+        27.42
+      ]
+    },
+    "of": {
+      "value": 24.2,
+      "ci95": [
+        21.98,
+        26.45
+      ]
+    },
+    "tab": {
+      "value": 18.31,
+      "ci95": [
+        17.61,
+        18.94
+      ]
+    },
+    "unet": {
+      "value": 14.49,
+      "ci95": [
+        13.81,
+        15.28
+      ]
+    }
+  },
+  "deep_beats_tabular_bar": true
+}

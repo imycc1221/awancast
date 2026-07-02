@@ -1,0 +1,42 @@
+{
+  "note": "FAIR deep-vs-tabular (identical pixels+mask), seasonal holdout, onset MAE (K)",
+  "test_days": 6,
+  "onset_MAE_K": {
+    "persist": {
+      "value": 26.39,
+      "ci95": [
+        25.3,
+        27.41
+      ]
+    },
+    "of": {
+      "value": 24.2,
+      "ci95": [
+        21.92,
+        26.45
+      ]
+    },
+    "tab": {
+      "value": 18.39,
+      "ci95": [
+        17.67,
+        19.0
+      ]
+    },
+    "unet": {
+      "value": 14.19,
+      "ci95": [
+        13.03,
+        15.47
+      ]
+    }
+  },
+  "paired_tab_minus_unet": {
+    "mean": 4.19,
+    "ci95": [
+      2.91,
+      5.58
+    ],
+    "frac_unet_better": 1.0
+  }
+}
